@@ -1,0 +1,392 @@
+@media (max-width: 1400px) {
+    .header {
+        &__wrapper{
+            padding: 0 20px;
+        }
+    }
+    .promo {
+        padding-top: 220px;
+    }
+    .weekend {
+        &__title {
+            font-size: 86px;
+            line-height: 86px;
+        }
+    }
+    .kitchen {
+        &__descr {
+            margin-right: 0;
+        }
+    }
+    .container {
+        &_right {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 20px;
+        }
+    }
+    .bedrooms {
+        &__descr {
+            margin-right: 0;
+        }
+    }
+    .swiper {
+        margin-right: 0;
+        padding: 0 0 0 6px;
+    }
+}
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 30px;
+    }
+    .promo {
+        padding-top: 200px;
+        &__headline {
+            font-size: 38px;
+            line-height: 43px;
+        }
+        svg {
+            display: none;
+        }
+    }
+    .weekend {
+        &__title {
+            font-size: 74px;
+            line-height: 74px;
+        }
+    }
+    .arrange {
+        &__item {
+            justify-content: space-around;
+            padding: 0 10px;
+        }
+    }
+    .together {
+        &__wrapper {
+            grid-template-columns: 1.5fr 2fr;
+            column-gap: 34px;
+        }
+        &__col2 {
+            column-gap: 15px;
+        }
+    }
+}
+@media (max-width: 992px) {
+    .promo {
+        &__logo {
+            width: 220px;
+        }
+        &__headline {
+            font-size: 28px;
+            line-height: 34px;
+        }
+        &__sub {
+            margin-top: 45px;
+        }
+    }
+    .weekend {
+        &__title {
+            font-size: 54px;
+            line-height: 54px;
+        }
+    }
+    .overlay {
+        display: none;
+    }
+    .kitchen {
+        height: 400px;
+    }
+    .arrange {
+        &__item {
+            max-width: 300px;
+        }
+    }
+    .bedrooms {
+        height: 400px;
+    }
+    .footer {
+        &__wrapper {
+            grid-template:  minmax(122px, auto) minmax(72px, auto) minmax(160px, auto) / minmax(auto, 280px) minmax(300px, 576px);
+            row-gap: 27px;
+        }
+        &__pages {
+            grid-row: 1 /3;
+        }
+        &__social {
+            grid-column: 2 /4;
+            grid-row: 2 / 3;
+            justify-self: end;
+        }
+        &__newsletter {
+            grid-column: 2 / 4;
+        }
+    }
+}
+@media (max-width: 768px) {
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 26px;
+        height: 12px;
+        z-index: 6;
+        span {
+            display: block;
+            height: 2px;
+            width: 100%;
+            background-color: #fff;
+            margin-bottom: 2px;
+            transition: 0.5s all;
+        }
+        &_active {
+            span {
+                margin-bottom: -2px;
+                &:nth-child(1) {
+                    transform: translateY(3px) rotate(-45deg);
+                }
+                &:nth-child(2) {
+                    display: none;
+                }
+                &:nth-child(3) {
+                    transform: translateY(3px) rotate(45deg);
+                }
+            }
+        }
+    }
+    .header {
+        &__wrapper {
+            padding-right: 60px;
+        }
+        &__menu {
+            &-list {
+                position: fixed;
+                flex-direction: column;
+                justify-content: center;
+                align-items: start;
+                top: 0;
+                left: -100%;
+                width: 80%;
+                height: 100vh;
+                padding: 50px;
+                background-color: rgba(80, 80, 59, .9);
+                transition: 0.6s all;
+                &_active {
+                    left: 0;
+                }
+                a {
+                    font-size: 26px;
+                    line-height: 44px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    .descr {
+        padding: 40px 0 20px 0;
+    }
+    .weekend {
+        &__wrapper {
+            padding: 40px 0 60px 0;
+        }
+        &__title {
+            font-size: 32px;
+            line-height: 40px;
+        }
+    }
+    .kitchen {
+        &__descr {
+            margin-top: 250px;
+            width: 270px;
+        }
+    }
+    .arrange {
+        padding: 40px 0;
+        &__item {
+            margin-top: 20px;
+            width: auto;
+        }
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    }
+    .headline {
+        font-size: 22px;
+        line-height: 26px;
+    }
+    .sub {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .escape {
+        padding: 40px 0;
+        &__wrapper {
+            grid-gap: 20px;
+        }
+    }
+    .guest {
+        padding: 40px 0 80px 0;
+        min-height: 500px;
+    }
+    .swiper {
+        &-button {
+            &-prev-unique {
+                width: 40px;
+                height: 40px;
+                right: 66px;
+            }
+        }
+        &-button {
+            &-next-unique {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+    .together {
+        padding: 40px 0;
+        &__wrapper {
+            grid-template-columns: 1fr;
+            gap: 30px;
+        }
+        &__col2 {
+            gap: 20px;
+        }
+    }
+    .booking {
+        padding: 40px 0;
+    }
+    .footer {
+        padding: 40px 0;
+        &__info{
+            &-links {
+                flex-direction: column;
+
+            }
+            &-email {
+                &:before {
+                    display: none;
+                }
+            }
+            &-location {
+                &:before {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 576px) {
+    .btn {
+        &_top {
+            position: fixed;
+            bottom: 10%;
+            left: -100%;
+            transition: 0.6s all;
+            &_active {
+                left: 40px;
+                z-index: 8;
+            }
+        }
+        &_border {
+            margin: 0;
+        }
+        &_colored {
+            &-big {
+                margin-top: 10px;
+            }
+        }
+    }
+    .promo {
+        padding-top: 180px;
+        &__logo {
+            width: 160px;
+            height: auto;
+        }
+        &__headline {
+            font-size: 21px;
+            line-height: 24px;
+        }
+        &__sub {
+            margin-top: 20px;
+            font-size: 12px;
+        }
+    }
+    .descr {
+        &__wrapper {
+            grid-template: auto / 1fr;
+            gap: 20px;
+        }
+        &__col1 {
+            grid-row: unset;
+        }
+    }
+    .weekend {
+        &__wrapper {
+            padding: 20px 0 30px 0;
+        }
+        &__title {
+            font-size: 27px;
+            line-height: 34px;
+        }
+    }
+    .container {
+        padding: 0 10px;
+        &_right {
+            padding: 0 10px;
+        }
+    }
+    .kitchen {
+        &__descr {
+            margin-top: 200px;
+            width: 170px;
+        }
+    }
+    .escape {
+        &__wrapper {
+            grid-template: repeat(2, minmax(50px, auto)) repeat(2, minmax(70px, auto)) / minmax(auto, 568px);
+        }
+    }
+    .together {
+        &__col2 {
+            grid-template-columns: minmax(auto, 260px);
+            grid-gap: 10px;
+        }
+    }
+    .booking {
+        &__buttons {
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+    .footer {
+        &__wrapper {
+            grid-template: auto / repeat(2, 1fr);
+            row-gap: 27px;
+        }
+        &__pages {
+            grid-row: 2 / 3;
+            grid-column: 1 / 2;
+        }
+        &__social {
+            grid-column: 2 / 3;
+            justify-self: end;
+            grid-row: 2 / 3;
+            justify-self: center;
+        }
+        &__newsletter {
+            grid-row: 1 / 2;
+            grid-column: 1 / 3;
+        }
+        &__info {
+            grid-column: 1 / 3;
+            grid-row: 3 / 4;
+        }
+        &__container {
+            padding: 0;
+        }
+    }
+}
+
